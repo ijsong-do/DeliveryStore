@@ -107,7 +107,7 @@ Vary: Access-Control-Request-Headers
     "storeId": null
 }
 ```
-주문(Order) 정보 조회한다.
+- 주문(Order) 정보 조회한다.
 ```
 gitpod /workspace/DeliveryStore (main) $ http GET localhost:8081/orders
 HTTP/1.1 200 

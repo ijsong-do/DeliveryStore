@@ -62,4 +62,14 @@ Order 서비스에서 POST 방식으로 주문을 하면 OrderPlaced 이벤트�
 - Payment 서비스에서 pay Command로 요청정보를 전달한다.(req/res 동기방식)
 - Store 서비스, rider 서비스에 orderInfoCopy 정책으로 주문정보를 전달한다. (Pub/Sub : 비동기)
 
+생성된 서비스의 기동
+mvn spring-boot:run 
+
+요리주문을 등록한다.
+
+주문된 상품을 조회한다. 
+http :8081/inventories/1
+
+
+
 

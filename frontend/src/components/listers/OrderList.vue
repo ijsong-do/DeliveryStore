@@ -109,7 +109,7 @@
                 'storeId': '',
                 'address': '',
                 'customerId': '',
-                'qty': '',
+                'qty': 0,
             }
         },
         methods: {

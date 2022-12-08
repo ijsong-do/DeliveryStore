@@ -71,6 +71,7 @@
                     { text: "customerId", value: "customerId" },
                     { text: "status", value: "status" },
                     { text: "foodName", value: "foodName" },
+                    { text: "stock", value: "stock" },
                 ],
             foodCooking : [],
             newValue: {},
@@ -92,6 +93,7 @@
                 'customerId': '',
                 'status': '',
                 'foodName': '',
+                'stock': 0,
             }
         },
         methods: {

@@ -21,7 +21,7 @@
             <String label="StoreId" v-model="value.storeId" :editMode="editMode"/>
             <String label="Address" v-model="value.address" :editMode="editMode"/>
             <String label="CustomerId" v-model="value.customerId" :editMode="editMode"/>
-            <String label="Qty" v-model="value.qty" :editMode="editMode"/>
+            <Number label="Qty" v-model="value.qty" :editMode="editMode"/>
         </v-card-text>
 
         <v-card-actions>

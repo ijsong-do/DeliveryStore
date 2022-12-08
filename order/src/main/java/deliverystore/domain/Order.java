@@ -54,7 +54,7 @@ public class Order  {
     
     
     
-    private String qty;
+    private Integer qty;
 
     @PostPersist
     public void onPostPersist(){
@@ -76,6 +76,11 @@ public class Order  {
 
         OrderCanceled orderCanceled = new OrderCanceled(this);
         orderCanceled.publishAfterCommit();
+
+        // Get request from FoodCooking
+        //deliverystore.external.FoodCooking foodCooking =
+        //    Application.applicationContext.getBean(deliverystore.external.FoodCookingService.class)
+        //    .getFoodCooking(/** mapping value needed */);
 
     }
 

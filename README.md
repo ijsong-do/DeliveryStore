@@ -157,3 +157,158 @@ Vary: Access-Control-Request-Headers
     }
 }
 ```
+- payments 정보 조회한다.
+```
+gitpod /workspace/DeliveryStore (main) $ http GET localhost:8082/payments
+HTTP/1.1 200 
+Connection: keep-alive
+Content-Type: application/hal+json
+Date: Thu, 08 Dec 2022 16:20:31 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+
+{
+    "_embedded": {
+        "payments": [
+            {
+                "_links": {
+                    "payment": {
+                        "href": "http://localhost:8082/payments/1"
+                    },
+                    "self": {
+                        "href": "http://localhost:8082/payments/1"
+                    }
+                },
+                "amount": "10000",
+                "customerId": "song",
+                "orderId": "1",
+                "status": "주문-결제요청중"
+            }
+        ]
+    },
+    "_links": {
+        "profile": {
+            "href": "http://localhost:8082/profile/payments"
+        },
+        "self": {
+            "href": "http://localhost:8082/payments"
+        }
+    },
+    "page": {
+        "number": 0,
+        "size": 20,
+        "totalElements": 1,
+        "totalPages": 1
+    }
+}
+```
+- foodCookings 정보 조회한다.
+```
+gitpod /workspace/DeliveryStore (main) $ http GET localhost:8084/foodCookings
+HTTP/1.1 200 
+Connection: keep-alive
+Content-Type: application/hal+json
+Date: Thu, 08 Dec 2022 16:21:07 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+
+{
+    "_embedded": {
+        "foodCookings": [
+            {
+                "_links": {
+                    "accept": {
+                        "href": "http://localhost:8084/foodCookings/1/accept"
+                    },
+                    "finish": {
+                        "href": "http://localhost:8084/foodCookings/1/finish"
+                    },
+                    "foodCooking": {
+                        "href": "http://localhost:8084/foodCookings/1"
+                    },
+                    "self": {
+                        "href": "http://localhost:8084/foodCookings/1"
+                    },
+                    "start": {
+                        "href": "http://localhost:8084/foodCookings/1/start"
+                    }
+                },
+                "customerId": "song",
+                "foodId": "탕수육",
+                "foodName": null,
+                "orderId": "1",
+                "qty": null,
+                "status": "주문-결제요청중"
+            }
+        ]
+    },
+    "_links": {
+        "profile": {
+            "href": "http://localhost:8084/profile/foodCookings"
+        },
+        "self": {
+            "href": "http://localhost:8084/foodCookings"
+        }
+    },
+    "page": {
+        "number": 0,
+        "size": 20,
+        "totalElements": 1,
+        "totalPages": 1
+    }
+}
+```
+- deliveries 정보 조회한다.
+```
+gitpod /workspace/DeliveryStore (main) $ http GET localhost:8085/deliveries
+HTTP/1.1 200 
+Connection: keep-alive
+Content-Type: application/hal+json
+Date: Thu, 08 Dec 2022 16:21:14 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+
+{
+    "_embedded": {
+        "deliveries": [
+            {
+                "_links": {
+                    "delivery": {
+                        "href": "http://localhost:8085/deliveries/1"
+                    },
+                    "self": {
+                        "href": "http://localhost:8085/deliveries/1"
+                    }
+                },
+                "address": "서울 용산구 용산동",
+                "customerId": "song",
+                "orderId": "1",
+                "status": "주문-결제요청중"
+            }
+        ]
+    },
+    "_links": {
+        "profile": {
+            "href": "http://localhost:8085/profile/deliveries"
+        },
+        "self": {
+            "href": "http://localhost:8085/deliveries"
+        }
+    },
+    "page": {
+        "number": 0,
+        "size": 20,
+        "totalElements": 1,
+        "totalPages": 1
+    }
+}
+```

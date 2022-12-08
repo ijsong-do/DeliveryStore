@@ -55,12 +55,6 @@ public class Order  {
     
     
     private Integer qty;
-    
-    
-    
-    
-    
-    private Integer price;
 
     @PostPersist
     public void onPostPersist(){
@@ -68,11 +62,11 @@ public class Order  {
         //Following code causes dependency to external APIs
         // it is NOT A GOOD PRACTICE. instead, Event-Policy mapping is recommended.
 
-        deliverystore.external.PayCommand payCommand = new deliverystore.external.PayCommand();
+
+        deliverystore.external.Payment payment = new deliverystore.external.Payment();
         // mappings goes here
         OrderApplication.applicationContext.getBean(deliverystore.external.PaymentService.class)
-            .pay(/* get???(), */ payCommand);
-
+            .pay(payment);
 
 
         OrderPlaced orderPlaced = new OrderPlaced(this);

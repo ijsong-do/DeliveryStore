@@ -73,7 +73,6 @@
                 'address': '',
                 'customerId': '',
                 'qty': 0,
-                'price': 0,
             }
         },
         methods:{

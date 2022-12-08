@@ -72,6 +72,7 @@
                     { text: "address", value: "address" },
                     { text: "customerId", value: "customerId" },
                     { text: "qty", value: "qty" },
+                    { text: "price", value: "price" },
                 ],
             order : [],
             newValue: {},
@@ -94,6 +95,7 @@
                 'address': '',
                 'customerId': '',
                 'qty': 0,
+                'price': 0,
             }
         },
         methods: {

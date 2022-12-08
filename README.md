@@ -62,21 +62,20 @@ Order 서비스에서 POST 방식으로 주문을 하면 OrderPlaced 이벤트�
 - Payment 서비스에서 pay Command로 요청정보를 전달한다.(req/res 동기방식)
 - Store 서비스, rider 서비스에 orderInfoCopy 정책으로 주문정보를 전달한다. (Pub/Sub : 비동기)
 
-생성된 서비스의 기동
-mvn spring-boot:run 
-
-요리주문을 등록한다.
-
-주문된 상품을 조회한다. 
-http :8081/inventories/1
-
+생성된 서비스의 기동 한다. 
 ```
-gitpod /workspace/mall (main) $ http :8081/orders item="치킨" qty=10 price=200 state="주문접수-결재완료"
-HTTP/1.1 201 
-Connection: keep-alive
+http :8081/orders
 
+http :8082/payments
 
-gitpod /workspace/mall (main) $ 
+http :8084/foodCookings
+
+http :8085/deliveries
+```
+
+1건의 주문을 등록한다.
+```
+http POST http://localhost:8081/orders foodId="탕수육" address="서울 용산구 용산동" customerId="song" qty="1" price=10000
 ```
 
 

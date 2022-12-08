@@ -48,7 +48,7 @@
     - 7. 고객은 아직 요리가 시작되지 않은 주문은 취소 할 수 있다. (ok)
     - 8. 고객이 결제 취소하면 포인트 적립도 취소된다. (ok)
 
-![image](https://user-images.githubusercontent.com/118672378/206361966-fc81a412-067c-4dcf-b180-cedac65c2505.png)
+![image](https://user-images.githubusercontent.com/118672378/206443892-674efaf2-e5ab-45a3-8e3a-d1d79d17cbd5.png)
 
     - 9. 요리가 완료되면 고객의 지역 인근의 라이더들에 의해 배송건 조회가 가능하다. (ok)
     - 10. 라이더가 해당 요리를 Pick한 후, 앱을 통해 통보한다. (ok)

@@ -30,7 +30,7 @@
 
 
 ## Model
-![image](https://user-images.githubusercontent.com/118672378/206356021-4950a8ea-ea12-467c-a564-e4e0e757c1d5.png)
+![image](https://user-images.githubusercontent.com/118672378/206361894-5f700faa-6036-4d65-aa3c-408eae41d66f.png)
 
 요구사항을 커버하는지 검증
 
@@ -40,7 +40,7 @@
     - 2. 고객이 선택한 메뉴에 대해 결제한다. (ok)
     - 3. 주문이 되면 주문 내역이 입점상점주인에게 주문정보가 전달된다 (ok)
     
-![image](https://user-images.githubusercontent.com/118672378/206357259-14d0f43f-7554-4de9-becc-f141d48ef3b0.png)
+![image](https://user-images.githubusercontent.com/118672378/206361657-b1c2e890-df57-4a75-8c6c-e8e5309b8480.png)
 
     - 4. 주문이 되면 주문 내역이 입점상점주인에게 주문정보가 전달된다. (ok)
     - 5. 주문을수락하거나 거절할 수 있다. (ok)
@@ -48,7 +48,7 @@
     - 7. 고객은 아직 요리가 시작되지 않은 주문은 취소 할 수 있다. (ok)
     - 8. 고객이 결제 취소하면 포인트 적립도 취소된다. (ok)
 
-![image](https://user-images.githubusercontent.com/118672378/206357764-1624b8ba-eb06-42c6-b140-3b8efe6c1613.png)
+![image](https://user-images.githubusercontent.com/118672378/206361966-fc81a412-067c-4dcf-b180-cedac65c2505.png)
 
     - 9. 요리가 완료되면 고객의 지역 인근의 라이더들에 의해 배송건 조회가 가능하다. (ok)
     - 10. 라이더가 해당 요리를 Pick한 후, 앱을 통해 통보한다. (ok)

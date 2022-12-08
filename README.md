@@ -312,3 +312,17 @@ Vary: Access-Control-Request-Headers
     }
 }
 ```
+
+## 2. CQRS
+
+## 3. Compensation / Correlation
+
+## 4. Request / Response
+
+## 5. Circuit Breaker
+
+## 6. Gateway / Ingress
+
+
+
+

@@ -70,6 +70,14 @@ mvn spring-boot:run
 주문된 상품을 조회한다. 
 http :8081/inventories/1
 
+```
+gitpod /workspace/mall (main) $ http :8081/orders item="치킨" qty=10 price=200 state="주문접수-결재완료"
+HTTP/1.1 201 
+Connection: keep-alive
+
+
+gitpod /workspace/mall (main) $ 
+```
 
 
 

@@ -107,4 +107,53 @@ Vary: Access-Control-Request-Headers
     "storeId": null
 }
 ```
+주문(Order) 정보 조회한다.
+```
+gitpod /workspace/DeliveryStore (main) $ http GET localhost:8081/orders
+HTTP/1.1 200 
+Connection: keep-alive
+Content-Type: application/hal+json
+Date: Thu, 08 Dec 2022 16:17:51 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
 
+{
+    "_embedded": {
+        "orders": [
+            {
+                "_links": {
+                    "order": {
+                        "href": "http://localhost:8081/orders/1"
+                    },
+                    "self": {
+                        "href": "http://localhost:8081/orders/1"
+                    }
+                },
+                "address": "서울 용산구 용산동",
+                "customerId": "song",
+                "foodId": "탕수육",
+                "price": 10000,
+                "qty": 1,
+                "storeId": null
+            }
+        ]
+    },
+    "_links": {
+        "profile": {
+            "href": "http://localhost:8081/profile/orders"
+        },
+        "self": {
+            "href": "http://localhost:8081/orders"
+        }
+    },
+    "page": {
+        "number": 0,
+        "size": 20,
+        "totalElements": 1,
+        "totalPages": 1
+    }
+}
+```

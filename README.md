@@ -77,6 +77,34 @@ http :8085/deliveries
 ```
 http POST http://localhost:8081/orders foodId="탕수육" address="서울 용산구 용산동" customerId="song" qty="1" price=10000
 ```
+```
+gitpod /workspace/DeliveryStore (main) $ http POST http://localhost:8081/orders foodId="탕수육" address="서울 용산구 용산동" customerId="song" qty="1" price=10000
+HTTP/1.1 201 
+Connection: keep-alive
+Content-Type: application/json
+Date: Thu, 08 Dec 2022 16:16:27 GMT
+Keep-Alive: timeout=60
+Location: http://localhost:8081/orders/1
+Transfer-Encoding: chunked
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
 
-
+{
+    "_links": {
+        "order": {
+            "href": "http://localhost:8081/orders/1"
+        },
+        "self": {
+            "href": "http://localhost:8081/orders/1"
+        }
+    },
+    "address": "서울 용산구 용산동",
+    "customerId": "song",
+    "foodId": "탕수육",
+    "price": 10000,
+    "qty": 1,
+    "storeId": null
+}
+```
 

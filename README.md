@@ -1,5 +1,4 @@
-# DeliveryStore
-# 배달상점
+# 배달상점 (DeliveryStore)
 
 본 예제는 MSA/DDD/Event Storming/EDA 를 포괄하는 분석/설계/구현/운영 전단계를 커버하도록 구성한 예제입니다.
 이는 클라우드 네이티브 애플리케이션의 개발에 요구되는 체크포인트들을 통과하기 위한 예시 답안을 포함합니다.
@@ -31,4 +30,12 @@
 
 
 ## Model
+![image](https://user-images.githubusercontent.com/118672378/206356021-4950a8ea-ea12-467c-a564-e4e0e757c1d5.png)
 
+요구사항을 커버하는지 검증
+
+![image](https://user-images.githubusercontent.com/118672378/206356185-37be6199-d94b-432f-a1e6-3be959f0a1c8.png)
+
+    - 고객이 메뉴를 선택하여 주문한다. (ok)
+    - 고객이 선택한 메뉴에 대해 결제한다. (ok)
+    - 주문이 되면 주문 내역이 입점상점주인에게 주문정보가 전달된다 (ok)

@@ -34,7 +34,7 @@
 
 요구사항을 커버하는지 검증
 
-![image](https://user-images.githubusercontent.com/118672378/206356185-37be6199-d94b-432f-a1e6-3be959f0a1c8.png)
+![image](https://user-images.githubusercontent.com/118672378/206360745-681ed5ff-05bc-4128-a6ee-ad483d8a98cc.png)
 
     - 1. 고객이 메뉴를 선택하여 주문한다. (ok)
     - 2. 고객이 선택한 메뉴에 대해 결제한다. (ok)

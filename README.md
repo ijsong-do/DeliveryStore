@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 배달상점 (DeliveryStore)
 
 본 예제는 MSA/DDD/Event Storming/EDA 를 포괄하는 분석/설계/구현/운영 전단계를 커버하도록 구성한 예제입니다.

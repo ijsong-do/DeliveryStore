@@ -72,7 +72,8 @@
                 'storeId': '',
                 'address': '',
                 'customerId': '',
-                'qty': '',
+                'qty': 0,
+                'price': 0,
             }
         },
         methods:{

@@ -17,6 +17,9 @@
             <div>
                 <String label="FoodName" v-model="item.foodName" :editMode="editMode" @change="change" />
             </div>
+            <div>
+                <Number label="Stock" v-model="item.stock" :editMode="editMode" @change="change" />
+            </div>
         </v-card-text>
 
         <v-card-actions>

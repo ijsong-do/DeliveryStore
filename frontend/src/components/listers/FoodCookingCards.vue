@@ -72,6 +72,7 @@
                 'customerId': '',
                 'status': '',
                 'foodName': '',
+                'stock': 0,
             }
         },
         methods:{

@@ -49,6 +49,12 @@ public class FoodCooking  {
     
     
     private String foodName;
+    
+    
+    
+    
+    
+    private Integer stock;
 
     @PostPersist
     public void onPostPersist(){

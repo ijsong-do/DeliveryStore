@@ -70,9 +70,9 @@ public class Order  {
 
         deliverystore.external.PayCommand payCommand = new deliverystore.external.PayCommand();
         // mappings goes here
-        OrderApplication.applicationContext.getBean(deliverystore.external.PaymentService.class)
-            .pay(/* get???(), */ payCommand);
-
+        //OrderApplication.applicationContext.getBean(deliverystore.external.PaymentService.class)
+        //    .pay(/* get???(), */ payCommand);
+  
 
 
         OrderPlaced orderPlaced = new OrderPlaced(this);
